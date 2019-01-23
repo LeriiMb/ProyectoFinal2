@@ -1,0 +1,264 @@
+header{
+    background-color: #5b7989;
+    display: flex;
+    flex-direction: row;	
+    border-radius: 10px 10px 0px 0px;
+    width: 900px;
+    margin: 0 auto; 
+    
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    background: #02010a;
+    -webkit-animation-name: ejemplo;
+    -webkit-animation-duration: 1s;
+    animation-name: ejemplo;
+    animation-duration: 1.5s;
+    width: 900px;
+    margin: 0 auto; 
+}
+
+@-webkit-keyframes ejemplo{
+    0%{margin-top: 150%;}
+    60%{margin-top: -5%;}
+    100%{margin-top: 0%;}
+}
+
+
+header>h1{
+    margin:0 auto;
+    display:block;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 1.5%;	
+    color: white;
+    text-shadow: 2px 2px #02010a;
+}
+#menu-principal{
+    margin:0 auto;
+    display:block;
+    width: 100%;
+    margin-right: 2%;
+    margin-top: 2%;	
+    text-align: right;
+    font-size: 1.2em;                                   
+}
+
+#menu-principal a{
+    color: white;
+    padding: 0 10px;       
+}
+
+.paisajes{
+    text-decoration: none;
+}
+
+#fotografias{    
+    background-color: #d5c75f;
+    display: -ms-flex;
+    display: -webkit-flex;  
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+}
+
+#contenedor1 {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+#contenedor2 {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+#contenedor1 img{
+    width: 100%;
+    border: 2px solid #02010a;
+}
+
+#contenedor2 img{
+    width: 100%;
+    border: 2px solid #02010a;
+}
+
+#contenedor1 > figure{
+    width: 100%;
+}
+
+#contenedor2 > figure{
+    width: 100%;
+}
+
+#contenedor1 > figure:first-child{
+    margin-right: 25px;
+}
+
+#contenedor2 > figure:first-child{
+    margin-right: 25px;
+}
+
+#contenedor1 figure img {
+    width: 90%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#contenedor2 figure img {
+    width: 90%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#imagen1{
+	-webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#imagen2{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#imagen3{
+	-webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+#imagen4{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#imagen6{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+footer{
+    width: 100%;
+    background: #C6d5c5;
+    color: #02010a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2em;  
+    width: 900px;
+    margin: 0 auto; 
+}
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footer-body a{
+    color: black;
+}
+
+.contactos{
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin: 0 auto; 	
+}
+.terminos{
+    margin-left: 5%;
+    margin-top: 1.5%;
+    margin: 0 auto; 
+}
+.sociales{
+    margin-left: 10%;
+    margin-top: 1.5%;
+    margin: 0 auto; 
+}
+.sociales a{
+    text-decoration: none;
+}
+.derechos{
+    margin-left: 13%;
+    margin-top: 1.5%;
+    margin: 0 auto; 	
+}
+
+@media (max-width:600px){
+    header{
+        width: 100%;
+    }
+    body{
+        width: 100%;  
+    }
+    footer{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header>h1{
+        color: white;
+        text-shadow: 2px 2px #02010a;
+        text-align: center;
+    }
+    #menu-principal{
+        margin-left: 2%;
+        margin-top: 2%;
+        font-size: 1em; 
+        text-align: center;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+    }
+    #contenedor2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagen1{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+    
+    #imagen2{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+    #imagen3{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+    #imagen4{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+    #imagen5{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+    #imagen6{
+        width: 90%;
+        max-width: 100%;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .footer-body{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
